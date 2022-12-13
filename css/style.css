@@ -58,7 +58,7 @@ nav .logo {
 nav .logo_name {
   font-size: 120%;
   font-weight: 900;
-  color: var(--blue);
+  color: var(--white);
   padding: 0;
   margin: 0;
 }
@@ -474,8 +474,8 @@ nav .icon-burger:focus {
   align-items: center;
 }
 
-.overlay-title h1 {
-  font-size: clamp(3rem, 1rem + 1.6vw, 4.5rem);
+.overlay-title h2 {
+   font-size: clamp(2.4rem, 1.2rem + 0.96vw, 3rem);
   width: 80%;
   
   color: var(--white);
@@ -493,7 +493,7 @@ nav .icon-burger:focus {
   background-image: linear-gradient(
     45deg,
     rgb(1, 2, 3, 0.95),
-    rgb(15, 19, 27, 0.9)
+    rgb(15, 19, 27, 0.8)
   );
   cursor: pointer;
   display: flex;
@@ -519,7 +519,7 @@ nav .icon-burger:focus {
   opacity: 1;
 }
 
-.p-container:hover .overlay-title h1 {
+.p-container:hover .overlay-title h2 {
   opacity: 0;
 }
 
@@ -568,13 +568,33 @@ nav .icon-burger:focus {
   padding: 10% 10% 5% 10%;
   background-image: radial-gradient(#8c8c8c 0.04rem, transparent 0.04rem);
   background-size: 1rem 1rem;
- }
+  }
 
 .contact h1 {
   margin: 0;
   font-size: clamp(3rem, 1rem + 1.6vw, 4.5rem);
   padding-bottom: 3rem;
   color: var(--dark_blue);
+}
+
+.contact .wave{
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation{
+  0%{ transform: rotate(0.0deg);}
+  10%{ transform: rotate(14.0deg);}
+  20%{ transform: rotate(-8.0deg);}
+  30%{ transform: rotate(14.0deg);}
+  40%{ transform: rotate(-4.0deg);}
+  50%{ transform: rotate(10.0deg);}
+  60%{ transform: rotate(0.0deg);}
+  100%{ transform: rotate(0.0deg);}
+
 }
 
 .contact h2 {
@@ -591,7 +611,7 @@ nav .icon-burger:focus {
 }
 
 .contact .flex-contact {
-  display: flex;
+   display: flex;
   flex-wrap: wrap;
   margin: 0;
 }
@@ -643,6 +663,7 @@ label {
 }
 
 input[type="email"] {
+  background: var(--flat-white);
   width: 100%;
   padding: 1rem;
   border: 0.2rem solid #ccc;
@@ -657,12 +678,13 @@ input[type="email"] {
 }
 
 textarea {
+ 
   width: 100%;
   padding: 1rem;
   border: 0.2rem solid #ccc;
   border-radius: 0.5rem;
   outline: none;
-  background: var(--white);
+  background: var(--flat-white);
   box-sizing: border-box;
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
@@ -705,11 +727,15 @@ input[type="submit"]:focus {
 
 /************************* Footer Section **************************/
 .footer {
-  padding: 2rem;
+  padding: 2.5rem;
   text-align: center;
   background-image: linear-gradient(45deg, #010203, #0f131b);
 }
 
+.footer .footer-image{
+height: 4rem;
+width: auto;
+}
 .footer p {
   padding: 0;
   margin: 0;
@@ -885,54 +911,75 @@ input[type="submit"]:focus {
 /********************************************** large desktop view******************************************************/
  
 
+
+
 .loader_bg{
   position: fixed;
-  z-index: 99999;
-  background: var(--black);
- 
+  z-index: 999;
+  background-image: linear-gradient(to bottom right, #030406, #0f131b);
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.load{
-  border: 2px solid white;
-  width: 15rem;
-  height: 15rem;
-}
-
-.load img{
-  width: 100%;
-  height: 100%;
+  transition: ease-out 0.2s;
 }
 
  
+.loader_img{
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color:  #303030;
+  padding: 0.3rem;
+   border-radius: 50%;
+ border: 0.8rem solid var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 99999;
+}
+
+.loader_img img{
+  width: 3rem;
+  height: 3rem;
+  }
+
+ 
 .loader{
-  border: 0 solid transparent;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1rem solid transparent;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 9rem;
+  height: 9rem;
+  
   position: absolute;
-  top: calc(50vh - 75px);
-  left: calc(50vw - 75px);
+  top: 50%;
+  left: 50% ;
+  transform: translate(-50%, -50%);
 }
 
 .loader::before, .loader::after{
   content: '';
-  border: 1em solid var(--blue);
+  border: 1.5rem solid var(--blue);
   border-radius: 50%;
-  width: inherit;
-  height: inherit;
+  width: 10rem;
+  height: 10rem;
+
   position: absolute;
-  top: 0;
-  left: 0 ;
-  animation: loader 2s linear infinite;
+  
+  animation: loader 1s linear infinite;
   opacity: 0;
 }
+
 .loader::before{
-  animation-delay: 0.5s;
+  animation-delay: 0.2s;
 }
 
 @keyframes loader{

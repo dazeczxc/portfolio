@@ -30,7 +30,7 @@
   <!-- Animate On Scroll JS-->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!-- Google Fonts-->
+  <!-- Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&display=swap" rel="stylesheet">
@@ -40,9 +40,10 @@
 <body>
 
   <div id="preloader" class="loader_bg">
-    <div class="load">
-      <img src="images/my_logo.png" class="logo-image" alt="logo">
-
+    <div class="loader">
+      <div class="loader_img">
+        <img src="images/my_logo.png" class="logo-image" alt="loading">
+      </div>
     </div>
   </div>
 
@@ -53,17 +54,15 @@
     <input placeholder="check" id="nav-toggle" type="checkbox">
     <div data-aos="fade-right" data-aos-delay="300" data-aos-easing="ease-in-out" class="logo">
       <img src="images/jd.png" class="logo-image" alt="logo">
-      <div class="logo_name">daseco</div>
+      <div class="logo_name">aseco</div>
     </div>
 
     <ul id="links" class="links">
-      <li><a data-aos="fade-left" data-aos-delay="300" data-aos-easing="ease-in-out"   href="#">Home</a></li>
-      <li><a data-aos="fade-left" data-aos-delay="400" data-aos-easing="ease-in-out"   href="#about">About</a>
+      <li><a data-aos="fade-left" data-aos-delay="300" data-aos-easing="ease-in-out" href="#">Home</a></li>
+      <li><a data-aos="fade-left" data-aos-delay="400" data-aos-easing="ease-in-out" href="#about">About</a>
       </li>
-      <li><a data-aos="fade-left" data-aos-delay="500" data-aos-easing="ease-in-out"  
-          href="#projects">Projects</a></li>
-      <li><a data-aos="fade-left" data-aos-delay="600" data-aos-easing="ease-in-out"  
-          href="#contact">Contact</a></li>
+      <li><a data-aos="fade-left" data-aos-delay="500" data-aos-easing="ease-in-out" href="#projects">Projects</a></li>
+      <li><a data-aos="fade-left" data-aos-delay="600" data-aos-easing="ease-in-out" href="#contact">Contact</a></li>
 
     </ul>
     <label for="nav-toggle" class="icon-burger">
@@ -72,7 +71,6 @@
       <div class="line"></div>
     </label>
   </nav>
-
   <!-- End of Navigation Menu-->
 
 
@@ -100,12 +98,12 @@
 
         </div>
 
-        <p data-aos="fade-right" data-aos-delay="300" data-aos-easing="ease-in-out"
-          class="greetings2">Hey! How nice of you
+        <p data-aos="fade-right" data-aos-delay="300" data-aos-easing="ease-in-out" class="greetings2">Hey! How nice of
+          you
           to look at my personal site, Thank you!
         </p>
-        <p data-aos="fade-right" data-aos-delay="300" data-aos-easing="ease-in-out"
-          class="greetings3">I am a developer who
+        <p data-aos="fade-right" data-aos-delay="300" data-aos-easing="ease-in-out" class="greetings3">I am a developer
+          who
           is passionate about building and
           designing <strong>Web Applications. </strong></p>
 
@@ -121,33 +119,34 @@
 
   <!-- About Section-->
   <div id="about" class="about">
-    <h1 data-aos="slide-down" data-aos-delay="200" >WHAT I DO.</h1>
+    <h1 data-aos="slide-down" data-aos-delay="200">WHAT I DO.</h1>
 
 
     <div class="about_flex">
       <div data-aos="fade-right" data-aos-delay="200" class="about_flex1">
-        <p>I started learning web development when I was third year while doing a
-          capstone project. It is fun doing, and I love it because learning something new makes me happy.
+         
+        <p>I'm passionate about developing technological solutions to everyday problems. This passion of 
+          mine started when I lead my capstone team when I was on third year college. It is fun 
+          doing, and I love designing and creating useful application. 
         </p>
 
-        <p>After all, the web is just an evolved form of the communities that we
-          know. We connect, we communicate, we interact. Everything just turned digital.</p>
-
-        <p>Today I'm deeply invested in life-long learning, I'm a web developer who carries a keen eye for design in a
-          user-first approach. My focus is on designing and developing responsive layouts on the <strong>HTML</strong>,
+        <p>Today I'm deeply invested in life-long learning, I'm a developer who carries a keen eye for design in a
+          user-first approach. My focus is on designing and developing responsive layouts using <strong>HTML</strong>,
           <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>PHP</strong>, in the near future is with
           <strong>React</strong>, <strong>NodeJS</strong>, <strong>Laravel</strong>, and more. And from my background as
-          a
-          BS Information Technology graduate, I'm well acquainted with bringing out solutions to complex problems.
+          a BS Information Technology graduate, I'm well acquainted with bringing out solutions to complex problems.
+        </p>
+
+        <p>Outside of work, I'm interested in playing video games and watching movies/series. I also like to travel and explore other places.
         </p>
       </div>
 
-      <div  class="about_flex2">
-        <p data-aos="slide-down" data-aos-delay="300" data-aos-easing="ease-in-out" >My Techstack</p>
+      <div class="about_flex2">
+        <p data-aos="slide-down" data-aos-delay="300" data-aos-easing="ease-in-out">My Techstack</p>
 
 
         <div class="icons_container">
-          <div data-aos="fade-up" data-aos-delay="100"  data-aos-easing="ease-in-out"class="icons">
+          <div data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in-out" class="icons">
             <img src="images/html.png" class="icon_image" alt="icon" loading="lazy">
             <p>HTML</p>
           </div>
@@ -177,12 +176,17 @@
             <p>MySQL</p>
           </div>
 
+          <div data-aos="fade-up" data-aos-delay="600" data-aos-easing="ease-in-out" class="icons">
+            <img src="images/git.png" class="icon_image" alt="icon" loading="lazy">
+            <p>Git</p>
+          </div>
+
           <div data-aos="fade-up" data-aos-delay="700" data-aos-easing="ease-in-out" class="icons">
             <img src="images/vscode.png" class="icon_image" alt="icon" loading="lazy">
             <p>VS Code</p>
           </div>
 
-          <div data-aos="fade-up" data-aos-delay="800"  data-aos-easing="ease-in-out" class="icons">
+          <div data-aos="fade-up" data-aos-delay="800" data-aos-easing="ease-in-out" class="icons">
             <img src="images/photoshop.png" class="icon_image" alt="icon" loading="lazy">
             <p>Photoshop</p>
           </div>
@@ -196,136 +200,136 @@
 
   <!-- End of About Section-->
 
-    <!--  Project Section-->
-    <div id="projects" class="project">
+  <!--  Project Section-->
+  <div id="projects" class="project">
 
-      <div data-aos="fade-down" data-aos-delay="200"  data-aos-easing="ease-in-out">
-  
-        <h1>SOME OF MY WORKS.</h1>
-        <p>Check out some of the works I made at freelancing and even case studies.
-        </p>
+    <div data-aos="fade-down" data-aos-delay="200" data-aos-easing="ease-in-out">
+
+      <h1>SOME OF MY WORKS.</h1>
+      <p>This are some of my projects when I was starting developing some web applications and android application.
+       </p>
+    </div>
+    <div class="flex-container">
+
+
+
+      <div data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-in-out" class="flex-item">
+
+        <div class="p-container">
+          <img src="images/hotel.png" class="project_image" alt="hfos" loading="lazy">
+
+          <div class="overlay-title">
+            <h2>Hotel Front Office System with Online Reservation</h2>
+          </div>
+
+          <div class="p-overlay">
+
+            <p>
+              A capstone project built with PHP, MySQL, JavaScript, and BootStrap. A web-based application that
+              provides
+              real time data reservation and front office transaction.</p>
+
+            <div class="icon-project">
+              <a class="project_btn1  " href="#">Live Site</a>
+              <a class=" project_btn2 " href="#">View Code</a>
+            </div>
+
+
+          </div>
+        </div>
+
       </div>
-      <div class="flex-container">
-  
-  
-  
-        <div data-aos="fade-up" data-aos-delay="200"  data-aos-easing="ease-in-out" class="flex-item">
-  
-          <div class="p-container">
-            <img src="images/hotel.png" class="project_image" alt="hfos" loading="lazy">
-  
-            <div class="overlay-title">
-              <h1>Hotel Front Office System with Online Reservation</h1>           
-            </div>
-  
-            <div class="p-overlay">
-               
-                <p>
-                  A capstone project built with PHP, MySQL, JavaScript, and BootStrap. A web-based application that
-                  provides
-                  real time data reservation and front office transaction.</p>
-  
-                <div class="icon-project">
-                  <a class="project_btn1  " href="#">Live Site</a>
-                  <a class=" project_btn2 " href="#">View Code</a>
-                </div>
-  
-               
-            </div>
+
+      <div data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in-out" class="flex-item">
+
+        <div class="p-container">
+          <img src="images/repos.png" class="project_image" alt="repos" loading="lazy">
+
+          <div class="overlay-title">
+            <h2>Digital Research Repository</h2>
           </div>
-  
-        </div>
-  
-        <div data-aos="fade-up" data-aos-delay="300"  data-aos-easing="ease-in-out" class="flex-item">
-  
-          <div class="p-container">
-            <img src="images/repos.png" class="project_image" alt="repos" loading="lazy">
-  
-            <div class="overlay-title">
-              <h1>Digital Research Repository</h1>
+
+          <div class="p-overlay">
+            <p>
+              A web-based application that stores research, capstone, or thesis
+              paper. Built using PHP, MySQL, HTML, CSS, and JavaScript.</p>
+
+            <div class="icon-project">
+              <a class="project_btn1  " href="#">Live Site</a>
+              <a class=" project_btn2 " href="#">View Code</a>
             </div>
-  
-            <div class="p-overlay">
-                 <p>
-                  A web-based application that stores research, capstone, or thesis
-                  paper. Built using PHP, MySQL, HTML, CSS, and JavaScript.</p>
-  
-                <div class="icon-project">
-                  <a class="project_btn1  " href="#">Live Site</a>
-                  <a class=" project_btn2 " href="#">View Code</a>
-                </div>
-  
-             </div>
+
           </div>
-  
         </div>
-  
-        <div data-aos="fade-up" data-aos-delay="400"  data-aos-easing="ease-in-out" class="flex-item">
-  
-          <div class="p-container">
-            <img src="images/project1.jpg" class="project_image" alt="qr" loading="lazy">
-  
-            <div class="overlay-title">
-              <h1>Attendance Monitoring using QR Code</h1>
-            </div>
-  
-            <div class="p-overlay">
-                 <p>
-                  An android application built from scratch using Java and Android
-                  Studio. Mainly functions to monitor the attendance of the students through QR Code.</p>
-  
-                <div class="icon-project">
-                  <a class=" project_btn1 " href="#">Live Site</a>
-                  <a class=" project_btn2" href="#">View Code</a>
-                </div>
-  
-             </div>
-          </div>
-  
-        </div>
-  
-        <div data-aos="fade-up" data-aos-delay="500"  data-aos-easing="ease-in-out" class="flex-item">
-  
-          <div class="p-container">
-            <img src="images/webpage.png" class="project_image" alt="web" loading="lazy">
-  
-            <div class="overlay-title">
-              <h1>Personal Webpage</h1>
-            </div>
-  
-            <div class="p-overlay">
-                 <p>
-                  A capstone project built with PHP, MySQL, JavaScript, and BootStrap. A web-based application that
-                  provides
-                  real time data reservation and front office transaction.</p>
-  
-                <div class="icon-project">
-                  <a class="project_btn1 " href="#">Live Site</a>
-                  <a class=" project_btn2 " href="#">View Code</a>
-                </div>
-  
-             </div>
-          </div>
-  
-        </div>
-  
+
       </div>
-  
+
+      <div data-aos="fade-up" data-aos-delay="400" data-aos-easing="ease-in-out" class="flex-item">
+
+        <div class="p-container">
+          <img src="images/qr.png" class="project_image" alt="qr" loading="lazy">
+
+          <div class="overlay-title">
+            <h2>Attendance Monitoring using QR Code</h2>
+          </div>
+
+          <div class="p-overlay">
+            <p>
+              An android application built from scratch using Java and Android
+              Studio. Mainly functions to monitor the attendance of the students through QR Code.</p>
+
+            <div class="icon-project">
+              <a class=" project_btn1 " href="#">Live Site</a>
+              <a class=" project_btn2" href="#">View Code</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-in-out" class="flex-item">
+
+        <div class="p-container">
+          <img src="images/webpage.png" class="project_image" alt="web" loading="lazy">
+
+          <div class="overlay-title">
+            <h2>Personal Webpage</h2>
+          </div>
+
+          <div class="p-overlay">
+            <p>
+              My minimal personal website I created to showcase my skills and the projects I made in one place. Fun fact: It's the website you are looking at right now.</p>
+
+            <div class="icon-project">
+              <a class="project_btn1 " href="#">Live Site</a>
+              <a class=" project_btn2 " href="#">View Code</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
     </div>
 
-    <!--End Project Section-->
+  </div>
 
-    <!-- Contact Section-->
+  <!--End Project Section-->
+
+  <!-- Contact Section-->
+
+
 
   <div id="contact" class="contact">
 
-    <h1 data-aos="fade-down" data-aos-delay="200"  data-aos-easing="ease-in-out">LET'S GET IN TOUCH!</h1>
+    <h1 data-aos="fade-down" data-aos-delay="200" data-aos-easing="ease-in-out">SAY HI <span class="wave">&#128075</span></h1>
 
-    <div  class="flex-contact">
+    <div class="flex-contact">
       <div class="flex-contact-left">
         <div class="contact_space_left" data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-in-out">
 
-          <h2>SAY HI.</h2>
+          <h2>My inbox is always open.</h2>
 
           <p>Though, I am fairly introverted myself, I do
             reply to messages as
@@ -336,33 +340,27 @@
           <p>You may also reach me through the following
             channels:</p>
 
-          <div  class="contact_icons">
-            <a   href="https://www.linkedin.com/in/joshua-daseco-8255a9245"> <i
-                class="  fa-brands fa-linkedin"></i></a>
-            <a   href="#"><i class="  fa-brands fa-square-github"></i></a>
-            <a   href="https://www.facebook.com/joshua.natedaseco"> <i
-                class="  fa-brands fa-square-facebook"></i></a>
-            <a   href="http://www.instagram.com/dazec_"> <i class="  fa-brands fa-square-instagram"></i></a>
-             <a   href="mailto: dasecojoshua@gmail.com"> <i class="  fa-solid fa-square-envelope"></i></a>
+          <div class="contact_icons">
+            <a href="https://www.linkedin.com/in/joshua-daseco-8255a9245"> <i class="  fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="  fa-brands fa-square-github"></i></a>
+            <a href="https://www.facebook.com/joshua.natedaseco"> <i class="  fa-brands fa-square-facebook"></i></a>
+            <a href="http://www.instagram.com/dazec_"> <i class="  fa-brands fa-square-instagram"></i></a>
+            <a href="mailto: dasecojoshua@gmail.com"> <i class="  fa-solid fa-square-envelope"></i></a>
           </div>
 
 
         </div>
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="300"  data-aos-easing="ease-in-out" class="flex-contact-right">
+      <div data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in-out" class="flex-contact-right">
         <div class="contact_space_right">
 
-          <form action="./action_page.php" method="POST">
-            <label  for="fname">Your email</label>
-            <input  type="email" id="fname" name="email" placeholder="Email"
-              required>
-            <label  for="subject">Message</label>
-            <textarea  id="subject" name="message" placeholder="Message"
-              required></textarea>
-            <input   type="submit" name="send" value="Submit">
-            <!--<button type="submit" class="btn btn-border-pop">Send</button>-->
-
+          <form action="formsubmit.co/youremail@domain.com" method="POST">
+            <label for="fname">Your email</label>
+            <input type="email" id="fname" name="email" placeholder="Email" required>
+            <label for="subject">Message</label>
+            <textarea id="subject" name="message" placeholder="Message" required></textarea>
+            <input type="submit" name="send" value="Submit">
           </form>
 
 
@@ -374,20 +372,21 @@
 
   <!-- End of Contact Section-->
 
-    <!-- Footer Section-->
-    <div class="footer">
-       <p>&copy; 2022 Copyright | All Rights Reserved<i class="space fa"></i> </p>
-      <p>Made by Joshua Daseco</p>
-    </div>
-    <!-- End of Footer Section-->
+  <!-- Footer Section-->
+  <div class="footer">
+    <img src="images/jd.png" class="footer-image" alt="logo">
+
+    <p>&copy; 2022 Joshua Daseco | All Rights Reserved<i class="space fa"></i> </p>
+   </div>
+  <!-- End of Footer Section-->
 
   <!-- scripts -->
   <!-- Main js -->
   <script src="js/main.js"></script>
 
   <!-- Particle js -->
-  <script src="js/particles.min.js"></script>
-  <script src="js/app.min.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
 
   <!-- Animate On Scroll -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -400,3 +399,4 @@
 </body>
 
 </html>
+
