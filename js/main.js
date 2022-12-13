@@ -36,7 +36,7 @@ document.getElementById('links').onclick = function () {
 //});
 
 
-var loader = document.getElementById("preload");
+var loader = document.getElementById("preloader");
 window.addEventListener("load", function(){
   loader.style.display= "none";
 });
