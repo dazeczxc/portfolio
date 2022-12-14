@@ -57,7 +57,7 @@ nav .logo {
 
 nav .logo_name {
   font-size: 120%;
-  font-weight: 900;
+  font-weight: bold;
   color: var(--white);
   padding: 0;
   margin: 0;
@@ -151,6 +151,8 @@ nav .icon-burger:focus {
   background-image: linear-gradient(to bottom right, #030406, #0f131b);
   height: 100vh;
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #particles-js {
@@ -168,16 +170,34 @@ nav .icon-burger:focus {
   margin: 0 10%;
 }
 
+.home .icon_links{
+  display: block;
+  padding-right: 7rem;
+  gap: 0.5rem;
+ }
+
+.icon_links a{
+  display: block;
+  font-size: 3.5rem;
+  color: var(--light-gray);
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
 .home_wrapper {
-  display: inline-block;
+   display: inline-block;
   overflow: hidden;
+  padding-left: 7rem;
+  border-left: 0.2rem solid var(--white);
+
 }
 
 .home_wrapper .greetings {
   font-size: clamp(2rem, 2vw, 3rem);
   font-weight: bold;
   margin: 0;
-  padding: 0 0 2rem 0;
+  padding: 0 0 0.5rem 0;
   color: var(--white);
 }
 
@@ -192,7 +212,7 @@ nav .icon-burger:focus {
 .home_wrapper .greetings3 {
   font-size: clamp(1.6rem, 1.8vw, 2.2rem);
   margin: 0;
-  padding: 1rem 0 4rem 0;
+  padding: 1rem 0 2rem 0;
   color: var(--white);
   line-height: 1.5;
 }
@@ -203,7 +223,7 @@ nav .icon-burger:focus {
   margin: 0;
   padding: 0;
   color: var(--white);
-}
+ }
 
 .home_wrapper .softdev {
   display: flex;
@@ -799,7 +819,35 @@ width: auto;
 
   .home {
     margin: 0 5%;
+    display: flex;
+    justify-content: flex-start;
+     flex-direction: column;
+   }
+
+  .home .icon_links{
+    padding: 1rem 0 0 0 ;
+    display: flex;
+    gap: 1rem;
+     padding-right: 0;
+     width: 100%;
+    }
+ 
+
+   #a{
+    order: 2;
+   }
+
+   #b{
+    order: 1;
+   }
+
+  .home .home_wrapper{
+    padding-left: 0;
+    border: none;
+
   }
+
+
 
   .about {
     padding: 20% 5%;
