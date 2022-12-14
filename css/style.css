@@ -11,8 +11,8 @@ html {
 :root {
   --dark_blue: #221e41;
   --light: #6a677a;
-  --blue: #00d9db;
-  --white: #fff;
+  --blue: #0EA5EA;
+  --white: #FDFFFE;
   --black: #040307;
 
   --light-gray: #e3e7e6;
@@ -20,6 +20,12 @@ html {
   --flat-white: #fbfeff;
 
   --cc: #ccc;
+
+  --light_background: #1A2332;
+  --background: #111828;
+  --grey: #6B7380;
+
+  --yellow: #F09E14;
 }
 
 body {
@@ -28,7 +34,7 @@ body {
   font-family: "Heebo", sans-serif;
   font-size: 1.6rem;
   box-sizing: border-box;
-  background-color: var(--flat-white);
+  background-color: var(--background);
 }
 
 
@@ -43,9 +49,9 @@ nav {
   right: 0;
   transition: all 0.5s ease;
   top: 0;
-  padding: 0 7%;
+  padding: 0 9%;
   height: 7.5rem;
-  background-color: var(--black);
+  background-color: var(--background);
 }
 
 nav .logo {
@@ -125,7 +131,7 @@ nav .icon-burger {
   right: 5%;
   top: 50%;
   transform: translateY(-50%);
-  border: 0.2rem solid var(--black);
+  border: 0.2rem solid var(--background);
   border-radius: 0.5rem;
 }
 
@@ -148,7 +154,8 @@ nav .icon-burger:focus {
 .home_container {
   position: relative;
   z-index: 1;
-  background-image: linear-gradient(to bottom right, #030406, #0f131b);
+ /* background-image: linear-gradient(to bottom right, #030406, #0f131b);*/
+ background-color: var(--background);
   height: 100vh;
   display: flex;
   justify-content: flex-start;
@@ -167,36 +174,38 @@ nav .icon-burger:focus {
   align-items: center;
   justify-content: flex-start;
   display: flex;
-  margin: 0 10%;
+  margin: 0 12%;
 }
 
 .home .icon_links{
   display: block;
   padding-right: 7rem;
-  gap: 0.5rem;
  }
 
 .icon_links a{
   display: block;
   font-size: 3.5rem;
-  color: var(--light-gray);
+  color: var(--grey);
   text-decoration: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0.5rem 0;
+}
+
+.icon_links a:hover{
+  color: var(--white);
 }
 
 .home_wrapper {
    display: inline-block;
   overflow: hidden;
   padding-left: 7rem;
-  border-left: 0.2rem solid var(--white);
+  border-left: 0.2rem solid var(--grey);
 
 }
 
 .home_wrapper .greetings {
-  font-size: clamp(2rem, 2vw, 3rem);
-  font-weight: bold;
-  margin: 0;
+  font-size: clamp(1.6rem, 1.8vw, 2.2rem);
+   margin: 0;
   padding: 0 0 0.5rem 0;
   color: var(--white);
 }
@@ -259,7 +268,7 @@ nav .icon-burger:focus {
   opacity: 0;
   margin: 0;
   padding: 0;
-  color: #00d9db;
+  color: var(--blue);
 }
 
 @keyframes mainBlock {
@@ -363,15 +372,15 @@ nav .icon-burger:focus {
 
 /*********************** About Section ********************************/
 .about {
-  padding: 10% 10%;
-  background-color: rgb(240, 243, 245, 0.3);
+  padding: 10% 12%;
+  background-color: var(--light_background);
 }
 
 .about h1 {
   margin: 0;
   font-size: clamp(3rem, 1rem + 1.6vw, 4.5rem);
   padding-bottom: 1rem;
-  color: var(--dark_blue);
+  color: var(--yellow);
 }
 
 .about .about_flex {
@@ -390,7 +399,7 @@ nav .icon-burger:focus {
 .about .about_flex .about_flex1 p {
   padding: 0 6rem 0 0;
   font-size: clamp(1.6rem, -1.4rem + 1.92vw, 2.2rem);
-  color: var(--dark_blue);
+  color: var(--white);
   line-height: 1.5;
 }
 
@@ -398,7 +407,7 @@ nav .icon-burger:focus {
   font-weight: bold;
   padding: 0 0 0 0;
   font-size: clamp(1.6rem, -1.4rem + 1.92vw, 2.2rem);
-  color: var(--dark_blue);
+  color: var(--white);
   line-height: 1.5;
 }
 
@@ -418,7 +427,7 @@ nav .icon-burger:focus {
 .icons .icon_image {
   height: clamp(2.5rem, -1.5rem + 3.2vw, 4.5rem);
   width: auto;
-  background: var(--lighter-gray);
+  background: var(--grey);
   padding: clamp(2rem, -1rem + 1.6vw, 3rem);
   border-radius: 0.5rem;
   cursor: pointer;
@@ -436,26 +445,27 @@ nav .icon-burger:focus {
   font-size: clamp(1.1rem, 0.1rem + 0.8vw, 1.6rem);
   padding: 0;
   margin: 0;
-  color: var(--light);
+  color: var(--grey);
 }
 
 /********************* End About Section **************************/
 
 /*********************** Project Section **************************/
 .project {
-  padding: 7% 10% 0 10%;
+  padding: 7% 12% 5% 12%;
   position: relative;
+  background-color: var(--flat-white);
 }
 
 .project h1 {
   font-size: clamp(3rem, 1rem + 1.6vw, 4.5rem);
   padding-bottom: 0px;
-  color: var(--dark_blue);
+  color: var(--yellow);
 }
 
 .project p {
   font-size: clamp(1.6rem, -1.4rem + 1.92vw, 2.2rem);
-  color: var(--dark_blue);
+  color: var(--white);
   line-height: 1.5;
 }
 
@@ -475,11 +485,15 @@ nav .icon-burger:focus {
   position: relative;
   overflow: hidden;
   height: 100%;
-}
+  box-sizing: border-box;
+ }
 
 .p-container img {
   height: 100%;
   width: 100%;
+  border-radius: 0.5rem;
+   overflow: hidden;
+  
 }
 
 .overlay-title {
@@ -488,20 +502,40 @@ nav .icon-burger:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgb(0, 0, 0, 0.7);
-  display: flex;
+  background-image: linear-gradient(
+    45deg,
+    rgb(15, 19, 27, 7),rgb(1, 2, 3, 0.7)
+  );  display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 0.5rem;
+   
+ 
 }
 
-.overlay-title h2 {
+.overlay-title .title1 {
    font-size: clamp(2.4rem, 1.2rem + 0.96vw, 3rem);
+   font-weight: bold;
   width: 80%;
-  
+  margin: 0;
+  padding: 0;
   color: var(--white);
   text-align: center;
   transition: opacity 0.4s ease-in-out;
-  
+}
+
+.overlay-title .title2 {
+  font-size: clamp(1.6rem, -1.4rem + 1.92vw, 2.2rem);
+  width: 80%;
+ margin: 0;
+ padding: 0;
+ color: var(--yellow);
+ text-align: center;
+ transition: opacity 0.4s ease-in-out;
 }
 
 .p-overlay{
@@ -522,7 +556,6 @@ nav .icon-burger:focus {
   flex-direction: column;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
-
 }
  
 
@@ -539,7 +572,7 @@ nav .icon-burger:focus {
   opacity: 1;
 }
 
-.p-container:hover .overlay-title h2 {
+.p-container:hover .overlay-title p {
   opacity: 0;
 }
 
@@ -585,16 +618,15 @@ nav .icon-burger:focus {
 
 /****************************  Contact Section *******************/
 .contact {
-  padding: 10% 10% 5% 10%;
-  background-image: radial-gradient(#8c8c8c 0.04rem, transparent 0.04rem);
-  background-size: 1rem 1rem;
-  }
+  padding: 10% 12% 5% 12%;
+  background-color: var(--background);
+   }
 
 .contact h1 {
   margin: 0;
   font-size: clamp(3rem, 1rem + 1.6vw, 4.5rem);
   padding-bottom: 3rem;
-  color: var(--dark_blue);
+  color: var(--yellow);
 }
 
 .contact .wave{
@@ -621,12 +653,12 @@ nav .icon-burger:focus {
   font-size: clamp(2.4rem, 1.2rem + 0.96vw, 3rem);
   margin: 0;
   padding: 0;
-  color: var(--dark_blue);
+  color: var(--white);
 }
 .contact p {
   padding-top: 1rem;
   font-size: clamp(1.6rem, -1.4rem + 1.92vw, 2.2rem);
-  color: var(--dark_blue);
+  color: var(--white);
   line-height: 1.5;
 }
 
@@ -661,17 +693,13 @@ nav .icon-burger:focus {
 .contact .contact_icons a {
   text-decoration: none;
   margin: 0;
-  padding: 0.4rem 1.2rem 0.05rem 1.2rem;
-  border-radius: 50%;
-  background: var(--lighter-gray);
-  font-size: clamp(3rem, 1rem + 1.6vw, 4.5rem);
+    font-size: clamp(3rem, 1rem + 1.6vw, 4.5rem);
   display: inline-block;
   color: var(--blue);
 }
 
 .contact .contact_icons a:hover {
-  background: var(--light-gray);
-  color: var(--dark_blue);
+   color: var(--white);
   transform: translateY(-5px);
   transition: ease-in-out 0.15s;
 }
@@ -679,14 +707,14 @@ nav .icon-burger:focus {
 label {
   margin-left: 10px;
   font-size: clamp(1.6rem, -1.4rem + 1.92vw, 2.2rem);
-  color: var(--dark_blue);
+  color: var(--white);
 }
 
 input[type="email"] {
-  background: var(--flat-white);
+  background: var(--background);
   width: 100%;
   padding: 1rem;
-  border: 0.2rem solid #ccc;
+  border: 0.2rem solid var(--grey);
   outline: none;
   box-sizing: border-box;
   margin-top: 0.5rem;
@@ -694,17 +722,17 @@ input[type="email"] {
   font-family: "Heebo", Arial, sans-serif;
   font-size: clamp(1.6rem, -1.4rem + 1.92vw, 2.2rem);
   border-radius: 0.5rem;
-  color: var(--dark_blue);
+  color: var(--white);
 }
 
 textarea {
  
   width: 100%;
   padding: 1rem;
-  border: 0.2rem solid #ccc;
+  border: 0.2rem solid var(--grey);
   border-radius: 0.5rem;
   outline: none;
-  background: var(--flat-white);
+  background: var(--background);
   box-sizing: border-box;
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
@@ -712,7 +740,7 @@ textarea {
   font-family: "Heebo", Arial, sans-serif;
   font-size: clamp(1.6rem, -1.4rem + 1.92vw, 2.2rem);
   height: 12rem;
-  color: var(--dark_blue);
+  color: var(--white);
 }
 
 input[type="email"]:hover,
@@ -749,7 +777,7 @@ input[type="submit"]:focus {
 .footer {
   padding: 2.5rem;
   text-align: center;
-  background-image: linear-gradient(45deg, #010203, #0f131b);
+  background-color: var(--light_background);
 }
 
 .footer .footer-image{
@@ -760,7 +788,7 @@ width: auto;
   padding: 0;
   margin: 0;
   font-size: clamp(1.1rem, 0.1rem + 0.8vw, 1.6rem);
-  color: var(--white);
+  color: var(--grey);
   line-height: 1.5;
 }
 /*********************** End Footer Section ***********************/
@@ -830,6 +858,10 @@ width: auto;
     gap: 1rem;
      padding-right: 0;
      width: 100%;
+    }
+
+    .home .icon_links a{
+      font-size: 3rem;
     }
  
 
