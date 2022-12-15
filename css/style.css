@@ -147,7 +147,7 @@ nav .icon-burger {
 }
 
 nav .icon-burger .line {
-  background-color: var(--white);
+  background-color: var(--grey);
   width: 2.6rem;
   height: 0.3rem;
   margin: 0.5rem;
