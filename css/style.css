@@ -358,12 +358,9 @@ text-align: center;}
 }
 
 .icons .icon_image {
-  height: clamp(2.5rem, -1.5rem + 3.2vw, 4.5rem);
+  height: 6rem;
   width: auto;
-  background: var(--white);
-  padding: clamp(2rem, -1rem + 1.6vw, 3rem);
-  border-radius: 0.5rem;
-}
+ }
 
 
 .icons .icons_overlay {
@@ -376,8 +373,7 @@ text-align: center;}
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0.5rem;
-  box-sizing: border-box;
+   box-sizing: border-box;
   opacity: 0;
 }
 
