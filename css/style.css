@@ -776,7 +776,7 @@ input[type="submit"]:focus {
     height: auto;
     flex-direction: column;
     justify-content: center;
-     background: rgb(15, 23, 36, 0.9);
+    background: rgb(15, 23, 36, 0.9);
     overflow: hidden;
     box-sizing: border-box;
     transition: all 0.3s;
@@ -876,6 +876,11 @@ input[type="submit"]:focus {
 
   .about .about_flex .about_flex1 p {
     padding: 0;
+  }
+
+  .skills{
+    padding: 20% 8%;
+
   }
 
   /***********************Project Section ***********************************/
