@@ -75,7 +75,7 @@ nav .logo {
 nav .logo_name {
   font-size: 120%;
   font-weight: bold;
-  color: var(--white);
+  color: var(--grey);
   padding: 0;
   margin: 0;
 }
@@ -738,6 +738,12 @@ input[type="submit"]:focus {
    justify-content: center;
 
 }
+
+.footer .footer_img{
+  height: 3rem;
+  padding-right: 1rem;
+  border-right: 0.3rem solid var(--blue);
+}
  
 
 .footer p {
@@ -893,7 +899,7 @@ input[type="submit"]:focus {
   /******************* End Project Section *****************************************************/
 
   .contact {
-    padding: 10rem 8%;
+    padding: 5% 8%;
   }
 
   .contact h1{
