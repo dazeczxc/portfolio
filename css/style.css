@@ -776,7 +776,7 @@ input[type="submit"]:focus {
     height: auto;
     flex-direction: column;
     justify-content: center;
-     background: var(--background);
+     background: rgb(15, 23, 36, 0.9);
     overflow: hidden;
     box-sizing: border-box;
     transition: all 0.3s;
