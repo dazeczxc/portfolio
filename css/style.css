@@ -262,7 +262,7 @@ nav .icon-burger:focus {
   border: 0.2rem solid var(--dark_blue);
  margin-right: 0.5rem;
   border-radius: 0.5rem;
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
    font-size: clamp(1.6rem, 2vw, 2.2rem);
   cursor: pointer;
   text-decoration: none;
@@ -283,9 +283,8 @@ nav .icon-burger:focus {
 }
 
 .button2 {
- 
   border-radius: 0.5rem;
-  padding: 1.5rem 5rem;
+  padding: 1rem 5rem;
    font-size: clamp(1.6rem, 2vw, 2.2rem);
   cursor: pointer;
   text-decoration: none;
@@ -298,6 +297,11 @@ nav .icon-burger:focus {
   box-sizing: border-box;
   border: 0.2rem solid var(--dark_blue);
  }
+
+ .button2:hover {
+  color: var(--white);
+  transition: ease-in-out 0.5s;
+}
 
 
 
@@ -738,15 +742,7 @@ input[type="submit"]:focus {
    justify-content: center;
 
 }
-
-.footer .footer-image {
-  height: 4rem;
-  width: auto;
-  padding-right: 1rem;
-  border-right: 0.3rem solid var(--blue);
-
  
-}
 
 .footer p {
    margin: 0 0 0 1rem;
@@ -778,7 +774,7 @@ input[type="submit"]:focus {
     height: auto;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(4, 3, 7, 0.95);
+     background: var(--background);
     overflow: hidden;
     box-sizing: border-box;
     transition: all 0.3s;
@@ -843,7 +839,10 @@ input[type="submit"]:focus {
   .home .home_wrapper {
     padding-left: 0;
     border: none;
+  }
 
+  .home .name{
+    font-size: 7rem;
   }
 
   .home .button{
