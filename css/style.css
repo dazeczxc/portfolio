@@ -204,6 +204,7 @@ nav .icon-burger:focus {
 
 .icon_links a:hover {
   color: var(--white);
+   transition: ease-in-out 0.15s;
 }
 
 .home_wrapper {
@@ -216,38 +217,38 @@ nav .icon-burger:focus {
 
 .home_wrapper .greetings {
   font-size: clamp(3rem, 1rem + 1.6vw, 4.5rem);
-  margin: 0;
+  margin: 0px;
   padding: 0 0 0.5rem 0;
   color: var(--white);
   font-weight: 200;
 }
 
-.home_wrapper .greetings2 {
-  font-size: clamp(3rem, 1rem + 1.6vw, 4.5rem);
+.home_wrapper h2 {
+  font-size: clamp(2.4rem, -0.8rem + 2.56vw, 4rem);   
   margin: 0;
   padding: 0 0 0 0;
   color: var(--white);
   line-height: 1.5;
-  font-weight: 200;
+  font-weight: 400;
 
 }
 
 .home_wrapper .greetings3 {
-  font-size: clamp(1.6rem, 1.8vw, 2.2rem);
-  margin: 0;
+  /*font-size: clamp(1.6rem, 1.8vw, 2.2rem);*/
+  font-size: clamp(1.6rem, -1.4rem + 1.92vw, 2.2rem);
+  margin: 0px;
   padding: 1rem 0 2rem 0;
   color: var(--white);
   line-height: 1.5;
   font-weight: 200;
 }
 
-.home_wrapper .name {
+.home_wrapper h1 {
   font-weight: 600;
-  font-size: clamp(5rem, 6vw, 12rem);
-  margin: 0;
-  padding: 0;
-  color: var(--white);
-  background-image: linear-gradient(45deg, var(--blue), var(--dark_blue));
+  font-size: clamp(8rem, -8rem + 12.8vw, 16rem);      
+  margin: 0px;
+  padding: 0px;
+   background-image: linear-gradient(45deg, var(--blue), var(--dark_blue));
   background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -268,13 +269,12 @@ nav .icon-burger:focus {
   border-radius: 0.5rem;
   padding: 1rem 2rem;
    font-size: clamp(1.6rem, 2vw, 2.2rem);
-   font-weight: 200;
+   font-weight: 400;
   cursor: pointer;
   text-decoration: none;
   color: var(--white);
   display: inline-block;
-  transition: all 0.2s ease-in;
-  position: relative;
+   position: relative;
   overflow: hidden;
   z-index: 1;
   box-sizing: border-box;
@@ -283,21 +283,21 @@ nav .icon-burger:focus {
 
 
 .button:hover {
-  color: var(--white);
-  transition: ease-in-out 0.5s;
+  background: transparent;
+  color: var(--blue);
+  border: 0.2rem solid var(--dark_blue);
 }
 
 .button2 {
   border-radius: 0.5rem;
   padding: 1rem 5rem;
    font-size: clamp(1.6rem, 2vw, 2.2rem);
-   font-weight: 200;
+   font-weight: 400;
   cursor: pointer;
   text-decoration: none;
-  color: var(--white);
+  color: var(--blue);
   display: inline-block;
-  transition: all 0.2s ease-in;
-  position: relative;
+   position: relative;
   overflow: hidden;
   z-index: 1;
   box-sizing: border-box;
@@ -307,6 +307,8 @@ nav .icon-burger:focus {
  .button2:hover {
   color: var(--white);
   transition: ease-in-out 0.5s;
+  background: var(--dark_blue);
+   border: 0.2rem solid var(--dark_blue);
 }
 
 
@@ -369,7 +371,7 @@ text-align: center;}
 .icons .icon_image {
   height: 6rem;
   width: auto;
- }
+  }
 
 
 .icons .icons_overlay {
@@ -378,13 +380,13 @@ text-align: center;}
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(45deg, var(--blue), var(--dark_blue));
-  display: flex;
+   display: flex;
   justify-content: center;
   align-items: center;
    box-sizing: border-box;
   opacity: 0;
-}
+  background-image: linear-gradient(var(--blue), var(--dark_blue));
+  }
 
 .icons_overlay p {
   font-size: clamp(1.1rem, 0.1rem + 0.8vw, 1.6rem);
@@ -396,6 +398,8 @@ text-align: center;}
 .icons:hover .icons_overlay {
   opacity: 1;
 }
+
+ 
 /*********************end  Techstack Section **************************/
 
 
@@ -538,27 +542,27 @@ text-align: center;}
 }
 
 .project_btn1 {
-  background: var(--blue);
+  background-image: linear-gradient(45deg, var(--blue), var(--dark_blue));
   color: var(--white);
-  border: 0.2rem solid var(--blue);
+  border: 0.2rem solid var(--dark_blue);
 }
 
 .project_btn1:hover {
   background: transparent;
   color: var(--blue);
-  border: 0.2rem solid var(--blue);
+  border: 0.2rem solid var(--dark_blue);
 }
 
 .project_btn2 {
   background: transparent;
   color: var(--blue);
-  border: 0.2rem solid var(--blue);
+  border: 0.2rem solid var(--dark_blue);
 }
 
 .project_btn2:hover {
-  background: var(--blue);
+  background: var(--dark_blue);
   color: var(--white);
-  border: 0.2rem solid var(--blue);
+  border: 0.2rem solid var(--dark_blue);
 }
 
 /************************ End Project Section *******************************/
@@ -729,12 +733,15 @@ input[type="submit"] {
   color: var(--white);
   padding: 1.2rem 2.4rem;
   border-radius: 0.5rem;
-  border: none;
+  border: 0.2rem solid var(--dark_blue);
  }
 
 input[type="submit"]:hover {
-   background-color: #37f2f5;
-  color: var(--white);
+   
+
+  background: transparent;
+  color: var(--blue);
+  border: 0.2rem solid var(--dark_blue);
 }
 
 input[type="submit"]:focus {
@@ -858,10 +865,7 @@ input[type="submit"]:focus {
     padding-left: 0;
     border: none;
   }
-
-  .home .name{
-    font-size: 7rem;
-  }
+ 
 
   .home .button{
     text-align: center;
