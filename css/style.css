@@ -797,8 +797,8 @@ input[type="submit"]:focus {
 
 .footer .footer_img{
   height: 3rem;
-  padding-right: 1rem;
-  border-right: 0.2rem solid var(--blue);
+  padding-right: 0rem;
+  border-right: 0.1rem solid var(--blue);
 }
  
 
