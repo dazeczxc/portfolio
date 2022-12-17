@@ -460,7 +460,6 @@ text-align: center;}
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 
 .overlay-title .title1 {
@@ -472,6 +471,7 @@ text-align: center;}
   color: var(--white);
   text-align: center;
   transition: opacity 0.4s ease-in-out;
+  
 }
 
 .overlay-title .title2 {
@@ -493,7 +493,7 @@ text-align: center;}
   margin-left: 0.5rem;
   }
 
-.opens_overlay i{
+.opens_overlay a{
   padding: 0;
   margin: 0;
   color: var(--grey);
@@ -512,11 +512,11 @@ text-align: center;}
       rgb(1, 2, 3, 1),
       rgb(15, 19, 27, 0.8));
   cursor: pointer;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  opacity: 0;
+   
   transition: opacity 0.4s ease-in-out;
 }
 
@@ -532,10 +532,14 @@ text-align: center;}
 }
 
 .p-container:hover .p-overlay {
-  opacity: 1;
+  display: flex;
 }
 
-.p-container:hover .overlay-title p {
+.p-container:hover .overlay-title .title1 {
+  opacity: 0;
+}
+
+.p-container:hover .overlay-title .title1 {
   opacity: 0;
 }
 
@@ -581,14 +585,14 @@ text-align: center;}
 
 .p-overlay .close_overlay{
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 0;
+  right: 0;
   display: none;
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   }
   
-.close_overlay i{
-  padding: 0;
+.close_overlay a{
+   padding: 0;
   margin: 0;
   color: var(--yellow);
   font-size: 2rem;
@@ -945,18 +949,10 @@ input[type="submit"]:focus {
 
   .overlay-title .opens_overlay{
     display: block; 
-   }
-
-  .opens_overlay:hover {
-    color: var(--blue);
-  }
+    }
 
   .p-overlay .close_overlay{
     display: block;
-  }
-
-  .close_overlay:hover .p-overlay{
-    display: none;
   }
 
   .p-overlay p {
@@ -1001,17 +997,20 @@ input[type="submit"]:focus {
 /********************************************** Tablet View ******************************************************/
 @media screen and (min-width: 481px) and (max-width: 768px) {
   /*  nav bar */
-
+  nav {
+    padding: 0 6%;
+  }
   nav .links a {
     font-size: 1.6rem;
   }
 
+
   .home {
-    margin: 0 10%;
+    margin: 0 8%;
   }
 
   .about {
-    padding: 15% 12%;
+    padding: 15% 8%;
   }
 
   .about .about_flex .about_flex1 {
@@ -1023,7 +1022,15 @@ input[type="submit"]:focus {
   }
 
   .project {
-    padding: 15% 12%;
+    padding: 15% 8%;
+  }
+
+  .overlay-title .opens_overlay{
+    display: block; 
+    }
+
+  .p-overlay .close_overlay{
+    display: block;
   }
 
   .p-overlay p {
@@ -1031,12 +1038,24 @@ input[type="submit"]:focus {
   }
 
   .contact {
-    padding: 10% 12%;
+    padding: 10% 8%;
+  }
+  
+  .contact_space_right {
+    padding-left: 1rem;
+  }
+  
+  .contact_space_left {
+    padding-right: 1rem;
   }
 }
 
 /********************************************** End Tablet View ******************************************************/
-
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+  .contact_space_left {
+    padding-right: 6rem;
+  }
+}
 /********************************************** large desktop view******************************************************/
 @media screen and (min-width: 2000px) {
 
