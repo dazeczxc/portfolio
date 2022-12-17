@@ -1061,7 +1061,7 @@ input[type="submit"]:focus {
 .loader_img {
   width: 4.5rem;
   height: 4.5rem;
-  background-color: #303030;
+  background-color: var(--background);
   padding: 0.3rem;
   border-radius: 50%;
   border: 0.8rem solid var(--blue);
