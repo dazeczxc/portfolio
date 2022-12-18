@@ -493,11 +493,13 @@ text-align: center;}
   margin-left: 0.5rem;
   }
 
-.opens_overlay a{
+.opens_overlay button{
   padding: 0;
   margin: 0;
   color: var(--grey);
   font-size: 1.6rem;
+  background: none;
+  border: none;
 }
 
 
@@ -517,7 +519,7 @@ text-align: center;}
   align-items: center;
   flex-direction: column;
    
-  transition: opacity 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 
@@ -591,11 +593,13 @@ text-align: center;}
   margin-right: 0.5rem;
   }
   
-.close_overlay a{
+.close_overlay button{
+  background: none;
    padding: 0;
   margin: 0;
   color: var(--yellow);
   font-size: 2rem;
+  border: none;
 }
 
 
