@@ -518,7 +518,6 @@ text-align: center;}
   justify-content: center;
   align-items: center;
   flex-direction: column;
-   
   transition: 0.4s ease-in-out;
 }
 
@@ -962,7 +961,19 @@ input[type="submit"]:focus {
   .p-overlay p {
     width: 90%;
   }
+ 
 
+  .p-container:hover .p-overlay {
+    display: none;
+  }
+
+  .p-container:hover .overlay-title .title1 {
+    opacity: 1;
+  }
+  
+  .p-container:hover .overlay-title .title1 {
+    opacity: 1;
+  }
 
  
 
