@@ -72,17 +72,10 @@ nav .logo {
   align-items: center;
 }
 
-nav .logo_name {
-  font-size: 120%;
-  font-weight: 600;
-  color: var(--grey);
-  padding: 0;
-  margin: 0;
-}
 
 nav .logo-image {
   width: auto;
-  height: 50%;
+  height: 60%;
   padding: 0;
   margin: 0;
 }
@@ -797,13 +790,6 @@ input[type="submit"]:focus {
    justify-content: center;
 
 }
-
-.footer .footer_img{
-  height: 3rem;
-  padding-right: 0rem;
-  border-right: 0.1rem solid var(--grey);
-}
- 
 
 .footer p {
    margin: 0 0 0 1rem;
