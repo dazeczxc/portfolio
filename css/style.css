@@ -80,6 +80,12 @@ nav .logo-image {
   margin: 0;
 }
 
+nav .logo_name{
+  font-size: clamp(2.4rem, -0.8rem + 2.56vw, 4rem);   
+  color: var(--grey);
+  font-weight: 600;
+}
+
 nav .links {
   float: right;
   padding: 0;
